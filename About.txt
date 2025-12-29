@@ -1,0 +1,16 @@
+<p>
+I am a multimedia artist specializing in <span>Video editing, Videography, and Photography</span>.  
+      I create compelling visuals and narratives that bring ideas to life, whether capturing 
+      moments behind the lens or crafting seamless edits. Every project is an opportunity to 
+      explore, experiment, and produce work that resonates and leaves an impression.
+
+ 
+ <br>     
+<br>I have <span>four years</span> of experience as a <span>multimedia artist</span>, working with school 
+        organizations and different event documentation projects. Through these opportunities,
+         I’ve learned and improved my skills in videography, photography, and video editing. I
+          enjoy creating visual stories and continue to grow my passion for multimedia with 
+            each project I work on.  
+
+
+</p>

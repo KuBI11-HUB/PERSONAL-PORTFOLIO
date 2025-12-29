@@ -1,13 +1,15 @@
- <!DOCTYPE html>
+
+
+ <!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     
-        <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="OSORIO_PORTFOLIO.css">
+        <title>PERSONAL PORTFOLIO</title>
+
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="FAVICON.png">
 
@@ -21,20 +23,23 @@
        </a>
 
        <i class="bx bx-menu" id="menu-icon"></i>
-
 <nav class="navbar">
   <a href="#home">Home</a>
   <a href="#about">About Me</a> 
   <a href="#services">Services</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
-   <a class="#inbox" href="#inbox">Inbox</a> 
-   
- 
- 
- 
- 
-  
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn">Inbox <i class='bx bx-chevron-down'></i></a>
+    <div class="dropdown-content" id="inbox-content">
+      <p>Loading Messages...</p>
+
+
+     
+
+    </div>
+  </div>
 </nav>
 
        
@@ -45,7 +50,7 @@
 
             <h1>Hi, it's <span>Cobe</span> </h1>
             
-<h3 class="Im">I'm a <span class="highlight">Media Producer</span></h3>
+<h3 class="Im">I'm a <span class="highlight">Multimedia Artist</span></h3>
 
           
              <div class="social-icons">
@@ -62,29 +67,41 @@
         </div>
         
         <div class="home-img">
-             <img src="1ST.jpg" alt="">
+             <img src="1ST.jpg" alt=""> 
         </div>
 
         
    </section>
 
-  <section class="about" id="about">
-  <div class="about-img">
-    <img src="About.jpg" alt="">
+  <section class="about" id="about" name="about">
+  <div class="about-img"> 
+    <img src="About.jpg" alt="">  
   </div>
+
   <div class="about-content">
+
     <h2>About <span>me</span></h2>
-    <p>I'm a passionate visual storyteller with a keen 
-        eye for detail. As a <span>Video editor, Videographer,
-         Photographer</span> .I bring ideas to life through
-          powerful visuals and compelling narratives.
-           Whether I’m capturing moments behind the lens 
-           or crafting seamless edits, I strive to 
-           deliver work that connects and inspires. 
-           Every project is a new opportunity
-         to create something memorable.</p>
-    <a href="#" class="btn">Read More</a>
-  </div>
+    
+     <?php  
+      
+      $file = "About.txt";
+     if(file_exists($file)){
+      echo file_get_contents($file);
+    }else{
+      echo "Default text here.";
+    }
+      ?>
+    
+      <form action="save_edited.php" method="POST"></form>
+    
+      <a class="btn"  href="edit_about.php" id="edit">Edit Content</a>
+      
+
+      </div>
+      
+      </div>
+
+
 </section>
 
 
@@ -97,18 +114,17 @@
             <div class="service-info">
                 <i class='bx bxs-camera'></i>
                 <h3>Photography</h3>
-                <p>I provide professional photography services that
-                   capture moments with clarity, emotion, and
-                   creative vision. Whether it’s portraits, 
-                   events, lifestyle shoots, or content for social
-                   media and brands, I focus on delivering images
-                   that tell a story and leave a lasting impression. 
-                   From planning the shoot to editing the final
-                   photos, I approach each project with a keen eye 
-                   for detail and a passion for visual storytelling.
-                   Let’s create timeless photos that reflect your
-                   unique style and purpose.</p>
-            </div>
+<p>I offer professional photographic services, which
+ Capture events with clarity, emotion and
+ A creative vision.  Portraits, 
+ events, lifestyle shoots, and social media material
+ I specialize in delivering photos for media and brands. 
+From arranging the shoot to editing the finished
+ Photos, I approach each project with a critical eye. 
+ Let us create lasting photographs that reflect your
+ distinctive style and purpose.</p>
+
+        </div>
         </div>
 
 
@@ -125,10 +141,7 @@
          lifestyle content like daily routines and
          productivity logs, I focus on producing clean,
          engaging edits that bring out the heart of 
-         every moment. My approach combines attention
-         to detail with a clear narrative flow, 
-         ensuring that every project big or small feels 
-         polished, purposeful, and personal.</p>
+         every moment. </p>
             
             </div>
         </div>
@@ -143,9 +156,7 @@
           <p>I offer professional videography services 
             that bring your vision to life through 
             captivating and high-quality video content.
-            From concept planning and filming to 
-            editing and final delivery, I handle 
-            every step of the production process with 
+           I handle every step of the production process with 
             creativity and precision. Whether you need
             a promotional video, event coverage, 
             social media content, or a personal project,
@@ -197,44 +208,44 @@
 <h2 class="heading">
     Projects
 </h2>
-  <div class="projects-box">
+  <div class="projects-box">  
 
    <div class="project-card">
-    <img src="PIC1.jpg" alt="">
+    <img src="PIC1.png" alt="">
     <h3>Project 1</h3>
-    <p>A warm, ambient scene blending rustic textures
-       and natural elements glowing light bulbs 
-       rise like modern torches against a backdrop 
-       of lush greenery, woven baskets, and delicate
-        blooms, capturing a moment of cozy elegance
-         and cultural charm.</p>    
-<div class="project-btn">Review Projects</div>
+    <p class="Project-Title">AQUIANTANCE PARTY 2023</p>
+    <p>Documented the Acquaintance Party 2023, capturing candid moments,
+       interactions, and the lively atmosphere as students built friendships.
+        Through photography, I highlighted genuine emotions, energy, and 
+        connections, creating a visual narrative that showcases my event 
+        coverage and storytelling skills.</p>    
+
    </div>
 
 
 
    <div class="project-card">
-    <img src="PIC2.jpg" alt="">
+    <img src="PIC2.png" alt="">
     <h3>Project 2</h3>
-    <p>A packed venue comes alive, as a crowd gathers for the Acquaintance
-       Party and Induction Program. The atmosphere is electric phones 
-       raised, lights cutting through haze, and anticipation building 
-       as the event unfolds on stage.</p>    
-<div class="project-btn">Review Projects</div>
+    <p class="Project-Title" style="font-size: 15px;">UNIVERSITY OF LUZON FOUNDATION ANNIVERSARY</p>
+    <p>Videographed the Foundation Day celebrations, focusing on the SHS students’ 
+      mass demonstration dance and contest highlights. By capturing performances,
+       interactions, and energy-filled moments, I edited a dynamic video that demonstrates 
+       my skills in storytelling, videography, and creating engaging visual narratives.</p>    
+
    </div>
 
 
 
    <div class="project-card">
-    <img src="PIC3.png" alt="">
+    <img src="PIC3.jpg" alt="">
     <h3>Project 3</h3>
-    <p>A vibrant spread of award sashes lies 
-      ready for their moment recognizing excellence 
-      in categories like Social Media Choice, Best in 
-      Casual Wear, and Best in Production. Each sash
-       reflects the energy and creativity celebrated
-       at the event</p>    
-<div class="project-btn">Review Projects</div>
+    <p class="Project-Title">UNIVERSITY OF LUZON SHS BALL 2024</p>
+    <p>Videographed the Senior High School Ball 2024, capturing students’ dances 
+      and the elegant flow of the event set in Traditional Filipino-themed
+       sceneries. Edited the footage to highlight performances, interactions,
+        and atmosphere, showcasing my skills in videography, storytelling, and event documentation.</p>    
+
    </div>
 
 
@@ -242,14 +253,15 @@
    <div class="project-card">
     <img src="VID1.png" alt="">
     <h3>Project 4</h3>
-    <p>The 2025 Foundation Day celebration of 
-      the School of Information Technology Education 
-      (SITE). The graphic integrates dynamic typography 
-      with event highlights, showcasing key activities
-       like sports, pageantry, and crowd engagement. 
-       Emphasis was placed on school spirit and inclusivity,
-        reflected through the colorful and energetic composition.</p>    
-<div class="project-btn">Review Projects</div>
+    <p class="Project-Title">SITE FOUNDATION DAY 2025</p>
+    <p>Videographed and edited the full SITE Foundation Day
+       2025, covering sports competitions, pageants, and a variety
+        of student activities. Added dynamic visuals, motion graphics, 
+        and text to highlight important moments, capturing the energy,
+         school spirit, and inclusivity. Produced a lively and engaging 
+         video that showcases the excitement,and sense of 
+         community throughout the entire celebration.</p>    
+
    </div>
 
 
@@ -257,46 +269,45 @@
    <div class="project-card">
     <img src="VID2.png" alt="">
     <h3>Project 5</h3>
+    <p class="Project-Title">SITE WEEK 2024</p>
     <p>SITE Week 2024 
-Crafted a sleek and professional 
-motion graphic for SITE Week 2024 
-at Universidad de Dagupan. The minimalist
- yet impactful design emphasizes the event
-  branding while maintaining a clean aesthetic, 
-  aligning with the academic tone of the
-   celebration. The animation and typography
-    were tailored for promotional materials 
-    across digital platforms.</p>    
-<div class="project-btn">Review Projects</div>
+ Videographed and edited the full week of SITE Week 2024,
+ covering seminars, pageants, cosplay shows, esports
+  competitions, and various student activities. Designed 
+  sleek motion graphics and clean visuals to enhance event 
+  branding, producing a dynamic and engaging video that highlights
+   my storytelling, videography, and promotional design skills across 
+   multiple digital platforms.</p>    
+
+   </div>
+
+   <div class="project-card">
+    <img src="VID3.jpg" alt="">
+    <h3>Project 6</h3>
+    <p class="Project-Title">Mr. & Ms. UL SENIOR HIGH SCHOOL 2023 </p>
+   <p> Documented the Mr. and Ms. SHS 2023 pageant at University of Luzon,
+     capturing the beauty and talent of the students. Videographed their 
+     walks, attires, and question-and-answer portion ect. Photographed the exciting 
+      coronation moments, creating a polished visual record that highlights 
+      the performances, energy, and celebration of the new SHS King and Queen.</p>    
+
    </div>
      
 
-   <div class="project-card">
-    <img src="VID3.png" alt="">
-    <h3>Project 6</h3>
-    <p>Mr. & Ms. UL Senior High School 2023
-  Developed a dynamic title sequence for the
- Mr. & Ms. UL Senior High School 2023 pageant.
-  The design features a fiery, regal theme with
-   cinematic motion effects and a gold crown
-    symbolizing prestige. This video served as 
-    the grand opening visual for the event.</p>    
 
-    <div class="project-btn">Review Projects</div>
-   </div>
 
-  </div>
   
   </section>
   <section class="contact" id="contact">
   <h2 class="heading"><span>Contact</span> Me</h2>
 
-<form  action="OSORIO_PORTFOLIO_.php" method="POST" >
+<form action="save_message.php" method="POST">
+
  
 
     <div class="input-group">
       <div class="input-box">
-        <label for = "user_input"></label>
+        
         <input type="text" name="full_name" placeholder="Full Name" required>
 
         <input type="email" name="email" placeholder="Email" required>
@@ -333,10 +344,13 @@ at Universidad de Dagupan. The minimalist
         <li><a href="#projects">My Projects</a></li> 
         <li><a href="#contact">My Contact</a></li>
     </ul>
-    <p class="copyright">Copyright &copy; 2025 Cobe Osorio. All rights reserved.</p>
+    <p class="copyright">Copyright &copy; 2025. All rights reserved.</p>
 </footer>
 
-<script src="OSORIO_PORTFOLIO.js"></script>
-    
+
+
+<script src="main.js"></script>
+
+
 </body>
 </html>
