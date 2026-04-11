@@ -1,7 +1,7 @@
 <?php
 
 
-$filename = "contacts.txt";
+$filename = "../Data/contacts.txt";
 $messages = [];
 
 if (file_exists($filename)) {

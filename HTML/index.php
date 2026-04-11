@@ -1,28 +1,28 @@
 
 
- <!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  
     
         <title>PERSONAL PORTFOLIO</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/png" href="FAVICON.png">
+    <link rel="icon" type="images/png" href="../Assets/FAVICON.png">
 
     
 </head>
-<body>
+<body>  
     <header class="header">
 
         <a href="#home" class="logo">
             <span>Cobe Osorio</span>
-       </a>
+      </a>
 
-       <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 <nav class="navbar">
   <a href="#home">Home</a>
   <a href="#about">About Me</a> 
@@ -36,13 +36,10 @@
       <p>Loading Messages...</p>
 
 
-     
-
     </div>
   </div>
 </nav>
 
-       
     </header>
     
     <section class="home" id="home">
@@ -53,39 +50,39 @@
 <h3 class="Im">I'm a <span class="highlight">Multimedia Artist</span></h3>
 
           
-             <div class="social-icons">
+        <div class="social-icons">
         <a href="https://www.instagram.com/cobeosorio/" target="_blank"><i class='bx bxl-instagram'></i></a>
         <a href="https://www.linkedin.com/in/cobe-osorio-6595b1334/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         <a href="https://www.facebook.com/share/1APBaky9qV/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook'></i></a>
         <a href="https://github.com/KuBI11-HUB" target="_blank"><i class='bx bxl-github'></i></a>
     </div>
-   <div class="home-btn">
- 
- <a href="#contact" class="btn">Contact</a>  
- 
+<div class="home-btn">
+
+<a href="#contact" class="btn">Contact</a>  
+
 </div>
         </div>
         
         <div class="home-img">
-             <img src="1ST.jpg" alt=""> 
+      <img src="../Assets/1ST.jpg" alt=""> 
         </div>
 
         
-   </section>
+</section>
 
   <section class="about" id="about" name="about">
   <div class="about-img"> 
-    <img src="About.jpg" alt="">  
+    <img src="../Assets/About.jpg" alt="">  
   </div>
 
   <div class="about-content">
 
     <h2>About <span>me</span></h2>
     
-     <?php  
+  <?php  
       
-      $file = "About.txt";
-     if(file_exists($file)){
+      $file = "../Data/About.txt";
+    if(file_exists($file)){
       echo file_get_contents($file);
     }else{
       echo "Default text here.";
@@ -107,22 +104,22 @@
 
 <section class="services" id="services">
 
-     <h2 class="heading">Services</h2>
+  <h2 class="heading">Services</h2>
     
-     <div class="services-container">
-         <div class="service-box">
+    <div class="services-container">
+        <div class="service-box">
             <div class="service-info">
                 <i class='bx bxs-camera'></i>
                 <h3>Photography</h3>
 <p>I offer professional photographic services, which
- Capture events with clarity, emotion and
- A creative vision.  Portraits, 
- events, lifestyle shoots, and social media material
- I specialize in delivering photos for media and brands. 
-From arranging the shoot to editing the finished
- Photos, I approach each project with a critical eye. 
- Let us create lasting photographs that reflect your
- distinctive style and purpose.</p>
+  Capture events with clarity, emotion and
+  A creative vision.  Portraits, 
+  events, lifestyle shoots, and social media material
+  I specialize in delivering photos for media and brands. 
+  From arranging the shoot to editing the finished
+  Photos, I approach each project with a critical eye. 
+  Let us create lasting photographs that reflect your
+  distinctive style and purpose.</p>
 
         </div>
         </div>
@@ -131,17 +128,17 @@ From arranging the shoot to editing the finished
         <div class="service-box">
             <div class="service-info">
           <i class='bx bxs-video'></i> 
-         <h3>Video Editing</h3>
-           <p>I’m a video editor with a 
-         passion for crafting stories that 
-         resonate. I specialize in editing videos 
-         that capture the essence of organizational 
-         events and personal journeys. Whether it's a
-         school event, a community initiative, or 
-         lifestyle content like daily routines and
-         productivity logs, I focus on producing clean,
-         engaging edits that bring out the heart of 
-         every moment. </p>
+    <h3>Video Editing</h3>
+  <p>I’m a video editor with a 
+      passion for crafting stories that 
+    resonate. I specialize in editing videos 
+    that capture the essence of organizational 
+    events and personal journeys. Whether it's a
+    school event, a community initiative, or 
+    lifestyle content like daily routines and
+    productivity logs, I focus on producing clean,
+    engaging edits that bring out the heart of 
+    every moment. </p>
             
             </div>
         </div>
@@ -149,14 +146,14 @@ From arranging the shoot to editing the finished
 
 
 
-       <div class="service-box">
+      <div class="service-box">
           <div class="service-info">
         <i class='bx bxs-video-plus' id="videoplus"></i> 
         <h3>Videography</h3>
           <p>I offer professional videography services 
             that bring your vision to life through 
             captivating and high-quality video content.
-           I handle every step of the production process with 
+            I handle every step of the production process with 
             creativity and precision. Whether you need
             a promotional video, event coverage, 
             social media content, or a personal project,
@@ -165,37 +162,37 @@ From arranging the shoot to editing the finished
             </p>
             
           </div>
-       </div>
     </div>
- <div class="skill"> 
-   <h1> My Skill</h1>
+    </div>
+<div class="skill"> 
+<h1> My Skill</h1>
   
 <li>
   <h3>Cinematography</h3>
-   <span class="bar">
-   <span class="Cinematography"> </span></span> 
+  <span class="bar">
+  <span class="Cinematography"> </span></span> 
 </li>
 
 <li>
   <h3> Photography</h3>
-   <span class="bar">
-   <span class="Photography"> </span></span> 
+  <span class="bar">
+  <span class="Photography"> </span></span> 
 </li>
 
 <li>
- <h3>Editing</h3>
-   <span class="bar">
-   <span class="Editing"> </span></span>
+<h3>Editing</h3>
+  <span class="bar">
+  <span class="Editing"> </span></span>
 </li>
 
 <li>
   <h3>Camera Operation</h3>
-   <span class="bar">
-   <span class="CameraOperation"> </span></span> 
-               
+  <span class="bar">
+<span class="CameraOperation"> </span></span> 
+              
 </li>
 
- </div>
+</div>
 
 
   </section>
@@ -210,35 +207,35 @@ From arranging the shoot to editing the finished
 </h2>
   <div class="projects-box">  
 
-   <div class="project-card">
-    <img src="PIC1.png" alt="">
+<div class="project-card">
+    <img src="../Assets/PIC1.png" alt="">
     <h3>Project 1</h3>
     <p class="Project-Title">AQUIANTANCE PARTY 2023</p>
     <p>Documented the Acquaintance Party 2023, capturing candid moments,
-       interactions, and the lively atmosphere as students built friendships.
+      interactions, and the lively atmosphere as students built friendships.
         Through photography, I highlighted genuine emotions, energy, and 
         connections, creating a visual narrative that showcases my event 
         coverage and storytelling skills.</p>    
 
-   </div>
+  </div>
 
 
 
-   <div class="project-card">
-    <img src="PIC2.png" alt="">
+  <div class="project-card">
+    <img src="../Assets/PIC2.png" alt="">
     <h3>Project 2</h3>
     <p class="Project-Title" style="font-size: 15px;">UNIVERSITY OF LUZON FOUNDATION ANNIVERSARY</p>
     <p>Videographed the Foundation Day celebrations, focusing on the SHS students’ 
       mass demonstration dance and contest highlights. By capturing performances,
-       interactions, and energy-filled moments, I edited a dynamic video that demonstrates 
-       my skills in storytelling, videography, and creating engaging visual narratives.</p>    
+      interactions, and energy-filled moments, I edited a dynamic video that demonstrates 
+      my skills in storytelling, videography, and creating engaging visual narratives.</p>    
 
-   </div>
+</div>
 
 
 
-   <div class="project-card">
-    <img src="PIC3.jpg" alt="">
+  <div class="project-card">
+    <img src="../Assets/PIC3.jpg" alt="">
     <h3>Project 3</h3>
     <p class="Project-Title">UNIVERSITY OF LUZON SHS BALL 2024</p>
     <p>Videographed the Senior High School Ball 2024, capturing students’ dances 
@@ -251,7 +248,7 @@ From arranging the shoot to editing the finished
 
 
    <div class="project-card">
-    <img src="VID1.png" alt="">
+    <img src="../Assets/VID1.png" alt="">
     <h3>Project 4</h3>
     <p class="Project-Title">SITE FOUNDATION DAY 2025</p>
     <p>Videographed and edited the full SITE Foundation Day
@@ -267,7 +264,7 @@ From arranging the shoot to editing the finished
 
 
    <div class="project-card">
-    <img src="VID2.png" alt="">
+    <img src="../Assets/VID2.png" alt="">
     <h3>Project 5</h3>
     <p class="Project-Title">SITE WEEK 2024</p>
     <p>SITE Week 2024 
@@ -282,7 +279,7 @@ From arranging the shoot to editing the finished
    </div>
 
    <div class="project-card">
-    <img src="VID3.jpg" alt="">
+    <img src="../Assets/VID3.jpg" alt="">
     <h3>Project 6</h3>
     <p class="Project-Title">Mr. & Ms. UL SENIOR HIGH SCHOOL 2023 </p>
    <p> Documented the Mr. and Ms. SHS 2023 pageant at University of Luzon,
@@ -301,7 +298,7 @@ From arranging the shoot to editing the finished
   <section class="contact" id="contact">
   <h2 class="heading"><span>Contact</span> Me</h2>
 
-<form action="save_message.php" method="POST">
+<form action="../php/save_message.php" method="POST">
 
  
 
@@ -344,12 +341,12 @@ From arranging the shoot to editing the finished
         <li><a href="#projects">My Projects</a></li> 
         <li><a href="#contact">My Contact</a></li>
     </ul>
-    <p class="copyright">Copyright &copy; 2025. All rights reserved.</p>
+    <p class="copyright">Copyright &copy; 2026. All rights reserved.</p>
 </footer>
 
 
 
-<script src="main.js"></script>
+<script src="../PHP/main.js"></script>
 
 
 </body>

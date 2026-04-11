@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         "Message: $message\n" .
         "------------------------\n";
 
-    $file = fopen("contacts.txt", "a");
+    $file = fopen("../Data/contacts.txt", "a");
 
     if ($file === false) {  
         die("Error: Could not open contacts.txt for writing.");
@@ -24,10 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     fwrite($file, $entry);  
     fclose($file);
 
-    echo "<script>alert('Message Sent Successfully!'); window.location.href='index.php';</script>";
+    echo "<script>alert('Message Sent Successfully!'); window.location.href='../HTML/index.php';</script>";
     exit();
 }
 
-header("Location: index.php");
+header("Location: ../HTML/index.php");
 exit();
 ?>

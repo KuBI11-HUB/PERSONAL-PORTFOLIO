@@ -1,8 +1,8 @@
 <?php
 
-$current_text = "About.txt";
-if (file_exists("About.txt")) { 
-    $current_text = file_get_contents("About.txt");
+$current_text = "../Data/About.txt";
+if (file_exists("../Data/About.txt")) { 
+    $current_text = file_get_contents("../Data/About.txt");
 }
 ?>
 <!DOCTYPE html>
@@ -12,9 +12,9 @@ if (file_exists("About.txt")) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit About Me</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Style/style.css">
     <style>
-       
+    
         body {
             display: flex;
             justify-content: center;    
@@ -51,13 +51,13 @@ if (file_exists("About.txt")) {
     <div class="edit-container">
         <h2>Edit <span>About Me</span></h2>
         
-        <form action="save_edited.php" method="POST">
-          
+        <form action="../php/save_edited.php" method="POST">
+    
             <textarea name="about" required><?php echo htmlspecialchars($current_text); ?></textarea>
             
             <div class="btn-group">
                 <input type="submit" value="Save Changes" class="btn" style="cursor: pointer;">
-                <a href="index.php" class="btn" style="background: transparent; border: 2px solid var(--main-color);">Cancel</a>
+                <a href="../HTML/index.php" class="btn" style="background: transparent; border: 2px solid var(--main-color);">Cancel</a>
             </div>
         </form>
     </div>
